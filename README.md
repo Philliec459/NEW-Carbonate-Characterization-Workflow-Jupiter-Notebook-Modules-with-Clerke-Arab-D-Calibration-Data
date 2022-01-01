@@ -14,7 +14,7 @@ and it demonstrates how we interrogate our well log data as well as our Rosetta 
 
 The second notebook is called: 
 
-        2_Chartbook_Porosity_Optimized-Lithology_Perm_Thomeer_Saturations_ver3-Lasio.ipynb
+        2_Chartbook_Porosity_Optimized-Lithology_Perm_Thomeer_Saturations_ver3-Lasio_with_FWL_search-implement_Optimization-Illite.ipynb
         
 and this notebook reads in the well log data from a .las file using Lasio and then performs all of the workflow steps 2 through 5 as discussed below. 
 
