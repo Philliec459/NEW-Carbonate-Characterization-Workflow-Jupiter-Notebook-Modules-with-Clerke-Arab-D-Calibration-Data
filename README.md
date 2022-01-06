@@ -1,6 +1,6 @@
 # Carbonate Reservoir Characterization workflow using Clerke’s carbonate Arab D Rosetta Stone calibration data to provide for a full pore system characterization with modeled saturations using Thomeer Capillary Pressure parameters for an Arab D complex carbonate reservoir.
-# New Scipy Optimization for Lithology including Illite Clay. This also has the FWL Search routine too.
-# INSTALL NOTE: Please delete any previous installations and re-install this repositiry in full and keep the intire project together in one subirectory since there are relative paths.
+## New Scipy Optimization for Lithology including Illite Clay. This also has the FWL Search routine too.
+### INSTALL NOTE: Please delete any previous installations and re-install this repositiry in full and keep the intire project together in one subirectory since there are relative paths.
 
 This repository contains 4 python Jupyter Notebooks to use as help files for our Geolog Carbonate Reservoir Characterization Workflow to demonstrate a tried and proven workflow employing the techniques as described by Phillips et al. (1) used in the characterization of most Arab D reservoirs in Saudi Arabia. Permeability, Petrophysical Rock Types (PRT), Capillary Pressure and modeled saturations are all estimated or calculated within this workflow in order to characterize this complex carbonate reservoirs, and Clerke’s (2) Arab D Rosetta Stone core analysis database is used as the calibration data. 
 
