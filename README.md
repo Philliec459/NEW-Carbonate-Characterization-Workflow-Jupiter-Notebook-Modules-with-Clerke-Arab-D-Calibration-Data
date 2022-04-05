@@ -4,7 +4,7 @@
 
 This repository contains 4 python Jupyter Notebooks to use as help files for our Geolog Carbonate Reservoir Characterization Workflow to demonstrate a tried and proven workflow employing the techniques as described by Phillips et al. (1) used in the characterization of most Arab D reservoirs in Saudi Arabia. Permeability, Petrophysical Rock Types (PRT), Capillary Pressure and modeled saturations are all estimated or calculated within this workflow in order to characterize this complex carbonate reservoirs, and Clerke’s (2) Arab D Rosetta Stone core analysis database is used as the calibration data. 
 
-![Geolog_Image](Results.png)
+>![Geolog_Image](Results.png)
 
 The first Jupyter Notebook is called:
 
@@ -55,22 +55,22 @@ The following workflow and processing is suggested to interrogate, process, inte
 
 
 ### Altair used to Interrogate the Rosetta Stone Thomeer Capillary Pressure curves and Petrophysical Rock Types (PRTs):
-![Geolog_Image](Thomeer_Pc_and_Thomeer_Parameters2.gif)
+>![Geolog_Image](Thomeer_Pc_and_Thomeer_Parameters2.gif)
 
 ### Altair Used to Interrogate the Well log data in Geolog:
-![Geolog_Image](Geolog20_ArabD.gif)
+>![Geolog_Image](Geolog20_ArabD.gif)
 
 ### Petrophysical Rock Typing (PRT):
 Most macro rock typically has a dual porosity system where the Pore Throat Distribution (PTD) will have two modes as shown below. 
 
-![Mode.png](Mode.png)
+>![Mode.png](Mode.png)
 
 The macro portion of the rock will have a mode greater than 2 microns with a second (or third) mode less than 2 microns. Probably the most abundant PRT is the M_1. This is a macro-porous rock with a mode in the macro portion of the PTD and a second mode in the meso-porosity range. In this PRT both the macro pores and meso-porous grains can have oil saturations once the capillary pressure is great enough to drive out the water. The M_2 PRT is also a macro rock, but the second pore system is micro-porous and is too tight to have hydrocarbon saturations. The Table below shows Clerke's description of his PRT's. 
 
 The following are some example results using Altair where the data in cross plots can be selected and then the appropriate data for those selected samples are shown in the bar charts below the cross plots. 
 
 ### Altair used to Compare Clerke's Petrophysical Rock Types (PRTs) to Winland r35 and Amaefule FZI and RQI:
-![Geolog_Image](rock_typing_hist.gif)
+>![Geolog_Image](rock_typing_hist.gif)
 
 One of the benefits of working with Thomeer parameters is that the exact mode of the PTD (radius) can be calculated for each sample using the Buiting Mode equation as shown below:
 
@@ -119,7 +119,7 @@ We would like to thank Andy McDonald and his Petrophysics Python Series GitHub r
 
 This is all still considered work in progress, but please find below an example of the output. 
 
-![Geolog_Image](optimized_lith.png)
+>![Geolog_Image](optimized_lith.png)
 
 3) Use available core data from the representative reservoir/field to build a petrophysical model to estimate permeability for all wells in field using our python loglan of kNN using normalized input data and weighted by Euclidean distances for each of the nearest neighbors. 
 
@@ -129,11 +129,11 @@ The next step is to estimate Petrophysical Rock Types (PRT) as defined by Clerke
     - Petrophysical Rock Types (PRT) as defined by Clerke (M_1 Macro/Meso, M_2 Macro/Micro, M_1_2 Macro/Meso/Micro, Type1 Meso, Type 1_1 Meso/Micro and Type 2 Micro PRTs.
     - Thomeer Capillary Pressure parameters (Pdi, Gi and BVocci) for each pore system i over the reservoir interval
 
-![Geolog_Image](knn_results.png)
+>![Geolog_Image](knn_results.png)
 
 5) Use the Thomeer parameters from step 4 to model Capillary Pressure saturations based on reservoir Capillary Pressure (buoyancy) due height above the Free Water Level (FWL) and the fluid density differences in the reservoir. In this instance we compare the Bulk Volume Oil (BVO) from our log analysis vs. BVO from Thomeer-based capillary pressure saturations. BVO is pore volume weighted.
 
-![Geolog_Image](workflow_examples.gif)
+>![Geolog_Image](workflow_examples.gif)
 
 #### Free Water Level Search:
 We have provided a FWL Search technique in python too to estimate the FWL elevation (TVDss) in each key well to be used to create a FWL plane for the field. To model Capillary Pressure saturations, it is essential to have a proper Free Water Level (FWL). Reservoir Capillary Pressure or buoyancy is dependent upon the height above the FWL. 
@@ -146,7 +146,7 @@ The FWL search is usually run on all wells with a fwl_est for each well. In many
 
 It should be noted, that not all FWL surfaces are flat. Structural tilting, subduction, and dynamic aquifers... can result in a tilted FWL elevations with the possibility of residual oil below the FWL, depending in the situation. 
 
-![Geolog_Image](FWLSearch.png)
+>![Geolog_Image](FWLSearch.png)
 
 6) As a secondary technique to estimate PRTs, we also implemented another applications in Geolog employing python’s Sklearn as published by Hall(3). We could have estimated Depositions of Environment or other types of categoric geologic facies too used in this Sklearn prediction process. 
 
