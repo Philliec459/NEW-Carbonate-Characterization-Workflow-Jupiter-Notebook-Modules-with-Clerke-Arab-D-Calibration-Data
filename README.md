@@ -30,7 +30,7 @@ The fourth notebook is used to process your High Pressure Mercury Injection (HPM
 
 The image below shows how this interactive process works:
 
-![HPMI_Image](Thomeer_Parameter_fitting.gif)
+>![HPMI_Image](Thomeer_Parameter_fitting.gif)
 
 This program uses Scipy Optimize Curve_fit to estimate the appropriate Thomeer parameters necessary to model the HPMI data. The points selected from the GUIs are used to estimate boundary conditions for these estimations, and the estimations for this example are shown below:
 
